@@ -40,7 +40,7 @@
   background-color: #223343; /* 設定背景顏色為黑色 */
   color: white; /* 設定文字顏色為白色 */
   text-align: center; /* 水平居中文字 */
-  padding: 10px 20px; /* 適當的填充以增加點擊區域 */
+  padding: 3px; /* 適當的填充以增加點擊區域 */
   border: none; /* 去除邊框 */
   font-size: 1rem;
 }
