@@ -88,15 +88,19 @@
 .transactionAmount {
   display: flex;
   align-items: center; /* 確保垂直居中 */
-  font-size: 1rem;
-  height: 30px;
+  font-size: 19px;
+  height: auto; /* 允許容器高度根據內容自動調整 */
+  margin: 4px;
 }
 
 .descriptionContainer {
   display: flex;
   align-items: center; /* 確保垂直居中 */
-  font-size: 1rem;
-  height: 30px;
+  font-size: 16px;
+  height: auto; /* 允許容器高度根據內容自動調整 */
+  margin: 4px;
+  white-space: pre-wrap; /* 保留空白符，允許自動和正常的文本換行 */
+  word-wrap: break-word; /* 在長單詞或URL地址内部進行換行 */
 }
 
 .income {
