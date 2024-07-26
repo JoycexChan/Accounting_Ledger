@@ -1,0 +1,177 @@
+/* accounting.module.css */
+
+/* 分區1 */
+
+.container_input {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1; /* 跨越全部列 */
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: 2fr 3fr 4fr 2fr; /* 比例分配 */
+  gap: 10px;
+  border-bottom: 2px solid #223343; /* 設定底部邊框為1像素寬的灰色 */
+  margin-bottom: 10px;
+}
+
+.formControl,
+.input {
+  width: 100%;
+  height: 30px;
+  min-width: 50px;
+  background-color: #ccddee; /* 設定背景顏色為黑色 */
+  color: rgb(0, 0, 0); /* 設定文字顏色為白色 */
+  text-align: center; /* 水平居中文字 */
+
+  border: none; /* 去除邊框 */
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.select {
+  width: 100%;
+  height: 30px;
+  min-width: 50px;
+  background-color: #223343; /* 設定背景顏色為黑色 */
+  color: white; /* 設定文字顏色為白色 */
+  text-align: center; /* 水平居中文字 */
+  padding: 10px 20px; /* 適當的填充以增加點擊區域 */
+  border: none; /* 去除邊框 */
+  font-size: 1rem;
+}
+
+/* 分區2 */
+.container_output {
+  width: 100%;
+  background-color: #ccddee;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.transactionList {
+  height: auto;
+  grid-column: 1 / -1; /* 跨越全部列 */
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr; /* 金額、備註、刪除按鈕的比例 */
+  gap: 10px;
+}
+
+.transactionItem {
+  height: 30px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* 灰色的底線 */
+  display: contents; /* 使列表項的子元素使用grid布局 */
+}
+
+.container_output button {
+  width: 100%;
+  min-width: 50px;
+  background-color: #223343;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+
+  color: white; /* 設定文字顏色為白色 */
+  text-align: center; /* 水平居中文字 */
+  font-size: 1rem;
+  padding: 3px; /* 適當的填充以增加點擊區域 */
+  border-radius: 5px;
+}
+
+.transactionAmount {
+  display: flex;
+  align-items: center; /* 確保垂直居中 */
+  font-size: 1rem;
+  height: 30px;
+}
+
+.descriptionContainer {
+  display: flex;
+  align-items: center; /* 確保垂直居中 */
+  font-size: 1rem;
+  height: 30px;
+}
+
+.income {
+  color: green; /* 收入為綠色 */
+}
+
+.expense {
+  color: red; /* 支出為紅色 */
+}
+
+.description {
+  color: rgb(0, 0, 0); /* 備註為黑色 */
+}
+
+/* 分區3 */
+
+.total {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #223343; /* 設定底部邊框為1像素寬的灰色 */
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+/* 分區4 */
+.container_exit {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 整體 */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 全屏高度 */
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  color: black;
+  font-size: 1rem;
+}
+
+.container_in {
+  border: 2px solid #223343; /* 設定底部邊框為1像素寬的灰色 */
+  max-width: 500px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.button {
+  width: 100%;
+  min-width: 85px;
+  background-color: #223343;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  line-height: 20px;
+  color: white; /* 設定文字顏色為白色 */
+  text-align: center; /* 水平居中文字 */
+  font-size: 1rem;
+  padding: 3px; /* 適當的填充以增加點擊區域 */
+  border-radius: 5px;
+}
