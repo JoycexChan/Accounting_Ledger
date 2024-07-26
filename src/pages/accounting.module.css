@@ -42,6 +42,7 @@
   text-align: center; /* 水平居中文字 */
   padding: 3px; /* 適當的填充以增加點擊區域 */
   border: none; /* 去除邊框 */
+  border-radius: 5px;
   font-size: 1rem;
 }
 
