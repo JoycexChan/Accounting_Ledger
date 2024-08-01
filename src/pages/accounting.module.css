@@ -19,6 +19,13 @@
   margin-bottom: 10px;
 }
 
+.container_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
 .formControl,
 .input {
   width: 100%;

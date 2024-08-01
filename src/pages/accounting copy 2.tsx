@@ -88,10 +88,8 @@ const Accounting = () => {
 
   return (
     <div className={styles.container}>
+      {user && <p>您已經使用 {user.email} 登入</p>}
       <div className={styles.container_in}>
-        <div className={styles.container_login}>
-          {user && <p>您已經使用 {user.email} 登入</p>}
-        </div>
         <div className={styles.container_input}>
           <select
             className={styles.select}

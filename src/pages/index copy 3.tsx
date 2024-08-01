@@ -63,25 +63,17 @@ const Home = () => {
       <div className={styles.container_2}>
         <div className={styles.container_3}>
           {user ? (
-            <div className={styles.container_3in}>
-              <p className={styles.custom_p}>您已經使用 {user.email} 登入</p>
-              <div className={styles.container_3button}>
-                <button
-                  className={styles.button2}
-                  onClick={() => router.push("/accounting")}
-                >
-                  立即開始
-                </button>
-                <button className={styles.button2} onClick={handleLogout}>
-                  登出
-                </button>
-              </div>
+            <div>
+              <p>您已經使用 {user.email} 登入</p>
+              <button onClick={() => router.push("/accounting")}>
+                立即開始
+              </button>
+              <button onClick={handleLogout}>登出</button>
             </div>
           ) : (
-            <div className={styles.container_3in}>
-              <h2 className={styles.custom_h2}>登入系統</h2>
-              <div className={styles.input_text}>
-                <label>電郵: </label>
+            <div>
+              <h2>登入系統</h2>
+              <div>
                 <input
                   type="email"
                   value={email}
@@ -89,8 +81,7 @@ const Home = () => {
                   placeholder="Email"
                 />
               </div>
-              <div className={styles.input_text}>
-                <label>密碼: </label>
+              <div>
                 <input
                   type="password"
                   value={password}
@@ -99,42 +90,32 @@ const Home = () => {
                 />
               </div>
               <div>
-                <button className={styles.button} onClick={handleLogin}>
-                  登入
-                </button>
+                <button onClick={handleLogin}>登入</button>
               </div>
             </div>
           )}
         </div>
 
         <div className={styles.container_3}>
-          <div className={styles.container_3in}>
-            <h2 className={styles.custom_h2}>註冊帳戶</h2>
-
-            <div className={styles.input_text}>
-              <label>電郵: </label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
-              />
-            </div>
-
-            <div className={styles.input_text}>
-              <label>密碼: </label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
-              />
-            </div>
-            <div>
-              <button className={styles.button} onClick={handleRegister}>
-                註冊
-              </button>
-            </div>
+          <h2>註冊帳戶</h2>
+          <div>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+            />
+          </div>
+          <div>
+            <button onClick={handleRegister}>註冊</button>
           </div>
         </div>
       </div>

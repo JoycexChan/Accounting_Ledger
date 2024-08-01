@@ -22,19 +22,30 @@
 .container_2 {
   width: 100%;
   height: 300px;
-  background-color: #ccddee;
+  background-color: #ffffff;
+  color: black;
   display: flex;
-  justify-content: center;
+
   align-items: center;
+  flex-direction: column; /* 使子元素垂直排列 */
 }
 
 .container_3 {
-  width: 100%;
-  height: 100px;
+  width: 300px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.container_3 > div {
+  margin: 10px; /* 設置每個盒子的下間距 */
+}
+
+.container_3 > h2 {
+  display: flex;
+  justify-content: center;
 }
 .title {
   font-size: 2rem; /* 大標題字體 */
@@ -47,12 +58,84 @@
 }
 
 .button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  width: 100%;
+  min-width: 85px;
   background-color: #223343;
-  color: #ffffff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  text-decoration: none; /* 去掉下划线 */
+  height: 30px;
+  line-height: 20px;
+  color: white; /* 設定文字顏色為白色 */
+  text-align: center; /* 水平居中文字 */
+  font-size: 1rem;
+  padding: 3px; /* 適當的填充以增加點擊區域 */
+  border-radius: 5px;
+  margin-top: 4px;
+}
+
+.button2 {
+  width: 100%;
+  min-width: 85px;
+  background-color: #223343;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  line-height: 20px;
+  color: white; /* 設定文字顏色為白色 */
+  text-align: center; /* 水平居中文字 */
+  font-size: 1rem;
+  padding: 3px; /* 適當的填充以增加點擊區域 */
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.custom_h2 {
+  margin-top: 20px;
+  width: 100%;
+  min-width: 85px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  line-height: 20px;
+
+  text-align: center; /* 水平居中文字 */
+  font-size: 25px;
+}
+
+.custom_p {
+  margin-top: 20px;
+  width: 100%;
+  min-width: 85px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  line-height: 20px;
+
+  text-align: center; /* 水平居中文字 */
+  font-size: 16px;
+}
+
+.container_3button {
+  display: flex;
+  flex-direction: row;
+}
+
+.input_text {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 100%;
+  min-width: 85px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.input_text input {
+  background-color: #ccddee; /* 設定背景顏色為黑色 */
+  color: rgb(0, 0, 0); /* 設定文字顏色為白色 */
+  height: 100%;
+  padding: 3px;
+  border: none; /* 去除邊框 */
+  border-radius: 5px;
 }
