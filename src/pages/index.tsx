@@ -11,6 +11,7 @@ import {
 import "../app/globals.css";
 import styles from "./home.module.css";
 
+
 const Home = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
