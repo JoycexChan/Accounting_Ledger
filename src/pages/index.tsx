@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  onAuthStateChanged,
   User,
 } from "firebase/auth";
 import "../app/globals.css";
@@ -15,6 +16,13 @@ const Home = () => {
   const [password, setPassword] = useState("");
   const [user, setUser] = useState<User | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
 
   const handleRegister = async () => {
     try {
